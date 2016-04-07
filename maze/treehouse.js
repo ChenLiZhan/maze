@@ -206,8 +206,7 @@ treehouse.checkMovement = function(dt) {
 };
 
 treehouse.checkVictory = function() {
-  // if (this.badgesEarned == this.badges.length) {
-  if (this.badgesEarned == 1) {
+  if (this.badgesEarned == this.badges.length) {
     // alert('Hooray!');
     // this.positionBadgesAndFrog();
     this.badgesEarned = 0;
