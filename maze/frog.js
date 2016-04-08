@@ -5,7 +5,7 @@ treehouse.Frog = function() {
 
   goog.base(this);
 
-  this.setSize(110, 110).setFill('img/lee.png');
+  this.setSize(90, 90).setFill('img/lee.png');
   this.isMoving = false;
   this.direction = NORTH;
   this.speed = 0.3;
