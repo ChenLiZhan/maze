@@ -206,15 +206,15 @@ treehouse.checkMovement = function(dt) {
 };
 
 treehouse.checkVictory = function() {
-  if (this.badgesEarned == this.badges.length) {
+  if (this.badgesEarned == 0) {
     // alert('Hooray!');
     // this.positionBadgesAndFrog();
     this.badgesEarned = 0;
     this.frog.isMoving = false;
     this.resultScene = new this.lime.Scene();
 
-    var game_background = new this.lime.Sprite().setSize(895, 563).setPosition(800, 370).setFill('img/game-background.png');
-    var game_finish = new this.lime.Sprite().setSize(895, 563).setPosition(800, 370).setFill('img/game-finish.png');
+    var game_background = new this.lime.Sprite().setSize(1798, 1126).setPosition(800, 370).setFill('img/game-background.png');
+    var game_finish = new this.lime.Sprite().setSize(1200, 800).setPosition(800, 370).setFill('img/game-finish.png');
     this.resultScene.appendChild(game_background);
     this.resultScene.appendChild(game_finish);
     this.director.replaceScene(this.resultScene);
